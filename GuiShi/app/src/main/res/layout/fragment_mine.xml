@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.culturer.guishi.pages.mine.MineFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/grey"/>
+
+    <TextView
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="区块：沙湖港湾" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/grey"/>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="隔壁老宋宋啊" />
+
+        <TextView
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="18588263531" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/grey"/>
+
+    <TextView
+        android:background="@color/white"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="地址：沙湖港湾" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/grey"/>
+
+    <!--标签-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/mine_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/grey"
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextColor="@color/grey_dark" />
+    <!--页面切换-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mine_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

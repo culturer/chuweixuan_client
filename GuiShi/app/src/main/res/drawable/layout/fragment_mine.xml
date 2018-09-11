@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.culturer.guishi.pages.mine.MineFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/grey"/>
+
+    <TextView
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="电话：18588263531" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/grey"/>
+    <TextView
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="地址：沙湖港湾" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/grey"/>
+
+    <!--标签-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/mine_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/grey"
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextColor="@color/grey_dark" />
+    <!--页面切换-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mine_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

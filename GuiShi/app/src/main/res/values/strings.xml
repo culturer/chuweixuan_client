@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">鬼    市</string>
+    <string name="title_home">官    方</string>
+    <string name="title_dashboard">便    利</string>
+    <string name="title_notifications">购  物  车</string>
+    <string name="title_mine">我    的</string>
+    <string name="title_send">配    送</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

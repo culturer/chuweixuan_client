@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.culturer.guishi"
+        minSdkVersion 23
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    compile 'com.youth.banner:banner:1.4.10'  //轮播
+    compile 'com.github.bumptech.glide:glide:4.6.1'
+    //折叠控件，解决了滚动冲突
+    compile 'com.github.cpoopc:scrollablelayoutlib:1.0.1'
+
+    //3d地图
+    compile 'com.amap.api:3dmap:6.1.0'
+//    //导航
+//    compile 'com.amap.api:navi-3dmap:6.1.0'
+//    //搜索
+//    compile 'com.amap.api:search:6.1.0'
+    //定位
+    compile 'com.amap.api:location:3.8.0'
+    //RxTools工具集
+    compile 'com.github.vondear:RxTools:v1.7.8.3'
+    //基础工具库
+//    implementation "com.github.vondear.RxTool:RxKit:v2.0.4"
+//
+//    //UI库
+//    implementation "com.github.vondear.RxTool:RxUI:v2.0.4"
+//
+//    //功能库（Zxing扫描与生成二维码条形码 支付宝 微信）
+//    implementation "com.github.vondear.RxTool:RxFeature:v2.0.4"
+//
+//    //ArcGis For Android工具库（API：100.1以上版本）
+//    implementation "com.github.vondear.RxTool:RxArcGisKit:v2.0.4"
+    //http库
+    compile 'com.kymjs.rxvolley:rxvolley:2.0.0'
+// If use okhttp function
+    compile 'com.kymjs.rxvolley:okhttp:1.1.4'
+//or
+    compile 'com.kymjs.rxvolley:okhttp3:1.1.4'
+    //添加Gson依赖
+    compile 'com.google.code.gson:gson:2.8.2'
+    //下拉刷新
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-12'
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-12'
+    //没有使用特殊Header，可以不加这行
+    //添加EventBus
+    compile 'org.greenrobot:eventbus:3.1.1'
+    //阿里云OSS
+    compile 'com.aliyun.dpa:oss-android-sdk:2.8.4'
+
+      androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
